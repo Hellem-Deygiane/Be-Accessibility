@@ -57,7 +57,6 @@ p{
 header{
     background-color: #184B88;
     background-image: url(img/img5copia.jpg);
-    /* opacity: 0.6; */
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -110,6 +109,7 @@ nav .close-icon{
     font-size: 30px;
     color: white;
 }
+
 /* TEXTO PRICIPAL */
 .banner{
     display: flex;
@@ -131,32 +131,34 @@ nav .close-icon{
     font-weight: lighter;
     margin: 18px 0;
 }
+
 /* VISÃO, MISSÃO */
-.faca-mais .container{
+.missao-visao .container{
     display: flex;
     align-items: center;
 }
-.faca-mais .faca-mais-text{
+.missao-visao .missao-visao-text{
     width: 50%;
     padding: 0 5px;
 }
-.faca-mais .faca-mais-text h3{
+.missao-visao .missao-visao-text h3{
     font-size: 60px;
 }
-.faca-mais .faca-mais-text p{
+.missao-visao .missao-visao-text p{
     margin: 5px 0 10px 0;
 }
-.faca-mais .faca-mais-img{
+.missao-visao .missao-visao-img{
     width: 50%;
 }
-.faca-mais .faca-mais-img img{
+.missao-visao .missao-visao-img img{
     width: 75%;
 }
-/* Nossa equipe */
-.depoimentos h3{
+
+/* VALORES */
+.valores h3{
     text-align: center;
 }
-.depoimentos p{
+.valores p{
     margin-bottom: 20px;
     text-align: center;
 }
@@ -164,7 +166,7 @@ nav .close-icon{
     display: flex;
     justify-content: center;
 }
-.depoimentos .card-item{
+.valores .card-item{
     background-color: #d3e6fd;
     margin: 15px;
     border-radius: 14px;
@@ -172,48 +174,54 @@ nav .close-icon{
     width: 350px;
     transition: 0.3s;
 }
-.depoimentos .card-item img{
+.valores .card-item img{
     border-radius: 100%;
     width: 80px;
     display: block;
     margin: 10px auto;
 }
-.depoimentos .card-item .nome-user{
+.valores .card-item .nome{
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 15px;
     transition: 0.3s;
 }
-.depoimentos .card-item .depoimentos-user{
+.valores .card-item .valores-text{
     font-size: 15px;
     padding: 0 15px;
     transition: 0.3s;
 }
-.depoimentos .card-item:hover{
+.valores .card-item:hover{
     background-color: #4f9cf9;
     margin-top: -5px;
 }
-.depoimentos .card-item:hover .nome-user,
-.depoimentos .card-item:hover .depoimento-user{
+.valores .card-item:hover .nome,
+.valores .card-item:hover .valores-text{
     color: white;
 }
-/* FOOTER */
-/* .footer{
-    background-color: #4f9cf9;
-    text-align: center;
+
+/* aqui será a futura pag de doação */
+.doacao .container{
+    display: flex;
+    align-items: center;
 }
-.footer i{
-    color: #4f9cf9;
-    font-size: 19px;
-    background-color: white;
-    padding: 10px;
-    margin: 3px;
-    border-radius: 10px;
+.doacao .doacao-text{
+    width: 50%;
+    padding: 0 5px;
 }
-.footer p{
-    margin-top: 10px;
-    color: white;
-} */
+.doacao .doacao-text h3{
+    font-size: 60px;
+}
+.doacao .doacao-text p{
+    margin: 5px 0 10px 0;
+}
+.doacao .doacao-img{
+    width: 50%;
+}
+.doacao .doacao-img{
+    width: 75%;
+}
+
 /* PAGINA SOBRE */
 .sobre .container{
     display: flex;
@@ -235,44 +243,46 @@ nav .close-icon{
     width: 100%;
     border-radius: 50px;
 }
-.servicos h3{
+
+/* PRODUTOS */
+.produtos h3{
+    font-size: 60px;
     text-align: center;
 }
-.servicos .container > p{
+.produtos .container > p{
+    font-size: 25px;
     text-align: center;
 }
-.servicos .rows-cards{
+.produtos .rows-cards{
     display: flex;
     justify-content: center;
     margin-top: 20px;
     flex-wrap: wrap;
 }
-.servicos .row-card-item{
+.produtos .row-card-item{
     background-color: #d3e6fd;
     width: 350px;
     padding: 20px;
     border-radius: 14px;
     margin: 20px;
     transition: 0.3s;
-
 }
-.servicos .row-card-item:hover{
+.produtos .row-card-item:hover{
     background-color: #4f9cf9;
 }
-.servicos .row-card-item:hover p{
+.produtos .row-card-item:hover p{
     color: white;
 }
-.servicos .row-card-item img{
-    /* background-color: #4f9cf9; */
+.produtos .row-card-item img{
     border-radius: 20px;
     width: 100%;
     padding: 9px;
 }
-.servicos .row-card-item p.nome-servicos{
+.produtos .row-card-item p.nome-produtos{
     margin: 5px 0;
     transition: 0.3s;
 }
-.servicos .row-card-item p.descricao{
+.produtos .row-card-item p.descricao{
     transition: 0.3s;
 }
 .btn-produtos{
@@ -281,6 +291,7 @@ nav .close-icon{
     color: white;
     border-radius: 5px;
 }
+
 .dados{
     background-color: #d3e6fd;
 }
@@ -367,9 +378,9 @@ nav .close-icon{
     border: none;
 }
 
-    /* menu mobile */
+    /* MENU RESPONSIVO */
 @media(max-width: 830px){
-    /* menu mobile */
+    /* MENU RESPONSIVO */
     .ul{
         position: fixed;
         top: 0;
@@ -399,20 +410,20 @@ nav .close-icon{
         top: 46px;
         right: 28px;
     }
-    /* HOME responsivo */
-    .faca-mais .faca-mais-text{
+    /* HOME RESPONSIVO */
+    .missao-visao .missao-visao-text{
         margin-top: 10px;
         padding: 0 20px;
         order: 1;
     }
-    .faca-mais .container{
+    .missao-visao .container{
         flex-direction: column;
     }
-    .faca-mais .faca-mais-text h3{
+    .missao-visao .missao-visao-text h3{
         font-size: 48px;
     }
-    .faca-mais .faca-mais-text,
-    .faca-mais .faca-mais-img{
+    .missao-visao .missao-visao-text,
+    .missao-visao .missao-visao-img{
         width: 100%;
     }
     .banner .banner-text{
@@ -425,10 +436,10 @@ nav .close-icon{
     .banner .banner-text p{
         font-size: 15px;
     }
-    .depoimentos .card-item{
+    .valoress .card-item{
         width: 100%;
     }
-    /* SOBRE */
+    /* SOBRE RESPONSIVO */
     .sobre .container{
         flex-direction: column-reverse;
     }
@@ -439,7 +450,7 @@ nav .close-icon{
     .sobre .sobre-text{
         margin-top: 40px;
     }
-    /* CONTATO */
+    /* CONTATO RESPONSIVO */
     .contato .contato-info{
         flex-direction: column-reverse;
     }
@@ -455,19 +466,12 @@ nav .close-icon{
     .banner .banner-text h1{
         font-size: 50px;
     }
-    .faca-mais .faca-mais-text h3{
+    .missao-visao .missao-visao-text h3{
         font-size: 40px;
     }
 }
-/* .conteiner2{
-    display:grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 1000px 1000px 1000px 1000px;
-    grid-template-areas: 
-    "header header header header"
-    "principal principal principal principal"
-    "footer footer footer footer"
-    } */
+
+/* FOOTER */
 footer{
     position: relative;
     bottom: 0;
