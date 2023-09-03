@@ -1,0 +1,8 @@
+link do site:
+https://hellem-deygiane.github.io/Be-Accessibility/
+
+link do video:
+https://drive.google.com/file/d/1BOT-xMh-v-ADzkmNGEm1VtQgJfBI4ale/view?usp=drivesdk
+
+link do GitHub:
+https://github.com/Hellem-Deygiane/Be-Accessibility
