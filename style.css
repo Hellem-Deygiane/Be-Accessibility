@@ -384,12 +384,10 @@ nav .close-icon{
     color: white;
     font-size: 24px;
     padding: 24px 0;
-
     background-image: none;
     display: flex;
     justify-content: center;
 }
-
 main{
     background-color: #d3e6fd;
     padding: 0 30px;
@@ -405,10 +403,28 @@ main{
 section{
     flex: 1;
 }
-aside{
-    background-color: red;
+.aside{
+    background-color: rgb(28, 166, 37);
     min-width: 250px;
 }
+/* TABELA DE PRODUTOS */
+.table{
+    border-collapse: collapse;
+    background-color: whitesmoke;
+    width: 100%;
+}
+.tr{
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #888;
+}
+
+
+
+
+
 
     /* MENU RESPONSIVO */
 @media(max-width: 400px){
