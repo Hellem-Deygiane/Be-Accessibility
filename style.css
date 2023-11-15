@@ -200,27 +200,28 @@ nav .close-icon{
 .valores .card-item:hover .valores-text{
     color: white;
 }
-/* aqui será a futura pag de doação */
-.doacao .container{
+/* JUNTE SE A NOS */
+.junte .container{
     display: flex;
     align-items: center;
 }
-.doacao .doacao-text{
+.junte .junte-text{
+    display: flex;
     width: 50%;
-    padding: 0 5px;
+    padding: 0 50px;
+    text-align: center;
 }
-.doacao .doacao-text h3{
-    font-size: 60px;
+.junte h3{
+    font-size: 20px;
+    
 }
-.doacao .doacao-text p{
-    margin: 5px 0 10px 0;
+.junte .junte-text a{ 
+    text-align: center;
+    display: flex;
+    width: 30%;
+    padding: 10px 30px;
 }
-.doacao .doacao-img{
-    width: 50%;
-}
-.doacao .doacao-img{
-    width: 75%;
-}
+
 
 /* PAGINA SOBRE */
 .sobre .container{
@@ -427,7 +428,7 @@ section{
 
 
     /* MENU RESPONSIVO */
-@media(max-width: 400px){
+@media(max-width: 480px){
     /* MENU RESPONSIVO */
     .ul{
         position: fixed;
@@ -537,7 +538,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    color: #f5f5f5;
+    color: #ffffff;
     grid-template-columns: "auto auto";
 }
 #p{
@@ -545,14 +546,14 @@ footer{
     margin: 10px auto;
     line-height: 28px;
     font-size: 14px;
-    color: #cacdd2;
+    color: #ffffff;
     }
 #h3{
         max-width: 500px;
         margin: 10px auto;
         line-height: 28px;
         font-size: 20px;
-        color: #cacdd2;
+        color: #ffffff;
 
         }
 
@@ -569,12 +570,12 @@ footer{
 
 
     #input_group button {
-        background-color: #993399;
-        Border:none;
-        Padding: 0px 1.25rem;
+        background-color: #031d7b;
+        color: rgb(255, 255, 255);
+        Padding: 3px 1.25rem;
         Font-size: 1.125rem;
         Height: 100%;
-        Border-radius: 0px 4px 4px 0px;
+        Border-radius: 0px 2px 2px 0px;
         Cursor: pointer;
         Transition: all 0.4s;
 
