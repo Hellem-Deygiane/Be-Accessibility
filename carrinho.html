@@ -43,9 +43,9 @@
         <div class="pagetitle"> Seu carrinho</div>
         <div class="content">
             <section>
-                <table>
+                <table class="table" >
                     <thead>
-                        <tr>
+                        <tr class="tr" >
                             <th>Produto</th>
                             <th>Preço</th>
                             <th>Quantidade</th>
@@ -53,18 +53,25 @@
                             <th>-</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <td></td>
-                        <td>R$ 240</td>
+                    <tbody class="td">
                         <td></td>
                         <td>R$ 240</td>
                         <td>
+                            <div class="qty">
+                                <button>+</button>
+                                <span>2</span>
+                                <button>-</button>
+                            </div>
+                        </td>
+                        <td>R$ 240</td>
+                        <td>
+                            <!-- x -->
                             <button><i class="fa fa-times-circle" aria-hidden="true"></i></button>
                         </td>
                     </tbody>
                 </table>
             </section>
-            <aside>Resumo de compras</aside>
+            <aside class="aside" >Resumo de compras</aside>
         </div>
     </main>
 
