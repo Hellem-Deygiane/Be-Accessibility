@@ -469,8 +469,10 @@ aside{
     .banner .banner-text p{
         font-size: 15px;
     }
-    .valoress .card-item{
+    .valores .card-item{
         width: 100%;
+        flex-direction: column;
+        position: absolute;
     }
     /* SOBRE RESPONSIVO */
     .sobre .container{
@@ -558,5 +560,8 @@ footer{
         Border-radius: 0px 4px 4px 0px;
         Cursor: pointer;
         Transition: all 0.4s;
+
+    }
+    @media(max-width: 320px){
 
     }
